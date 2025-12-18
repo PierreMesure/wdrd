@@ -1,24 +1,17 @@
-[tool.black]
-line-length = 120
-
-[tool.poetry]
+[project]
 name = "wdrd"
 version = "0.1.0"
 description = "Import data from Riksdagen to Wikidata"
-authors = ["Robin Linderborg"]
-license = "CC0"
-
-[tool.poetry.dependencies]
-python = "^3.8"
-wikidataintegrator = "*"
-pandas = "*"
-pyshex = "*"
-requests = "2.27.1"
-jupyterlab = "^3.2.8"
-
-[tool.poetry.dev-dependencies]
-black = {version = "^21.12b0", allow-prereleases = true}
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "setuptools",
+    "wikidataintegrator",
+    "pandas",
+    "pyshex",
+    "requests",
+    "jupyterlab",
+    "ipykernel",
+    "ipywidgets",
+    "python-dotenv"
+]

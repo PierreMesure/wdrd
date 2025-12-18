@@ -6,3 +6,5 @@ user-password.py
 */__pycache__/*
 .env
 .venv/
+*.egg-info
+build/

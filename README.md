@@ -20,6 +20,21 @@ There are four main functions:
 - Kommittédirektiv
 - Lag
 
+## Create a bot on Wikidata
+
+- Create a Wikidata bot by going to [this page](https://www.wikidata.org/wiki/Special:BotPasswords). The bot's username should look like *MyUsername@MyBot*.
+
+- Create an *.env* file by copying the template and replace the two environment variables with your newly created Wikidata credentials
+
+  ```shell
+  cp .env.example .env
+  ```
+
+  ```env
+  WIKIDATA_USERNAME=MyUsername@MyBot
+  WIKIDATA_PASSWORD=the-password-i-was-given
+  ```
+
 ## Get started, detailed instructions
 
 - Install [uv](https://docs.astral.sh/uv/) to manage Python and the project's dependencies
