@@ -1,8 +1,11 @@
 from functools import lru_cache as cache
+import os
 import pandas as pd
-from wikidataintegrator import wdi_core
+from wikibaseintegrator.wbi_helpers import execute_sparql_query
 
 from . import config
+
+USER_AGENT = f"{os.environ.get('WD_USERNAME')} wdrd (github.com/PierreMesure/wdrd)"
 
 
 @cache
@@ -17,8 +20,8 @@ def get_series_qid(session: str, doc_type: str) -> str:
         'SERVICE wikibase:label { bd:serviceParam wikibase:language "sv". }}'
     )
 
-    df = wdi_core.WDItemEngine.execute_sparql_query(query, as_dataframe=True)
-    return df.loc[0, "item"].split("/")[-1]
+    response = execute_sparql_query(query, user_agent=USER_AGENT)
+    return response["results"]["bindings"][0]["item"]["value"].split("/")[-1]
 
 
 @cache
@@ -34,7 +37,19 @@ def get_series_docs(session: str, doc_type: str) -> pd.DataFrame:
         "wdt:P1031 ?ref ."
         'SERVICE wikibase:label { bd:serviceParam wikibase:language "sv". }}'
     )
-    df = wdi_core.WDItemEngine.execute_sparql_query(query, as_dataframe=True)
+    response = execute_sparql_query(query, user_agent=USER_AGENT)
+
+    items = [
+        {
+            "item": item["item"]["value"],
+            "itemLabel": item["itemLabel"]["value"],
+            "code": item["code"]["value"],
+            "ref": item["ref"]["value"],
+        }
+        for item in response["results"]["bindings"]
+    ]
+    df = pd.DataFrame(items)
+
     if df.empty:
         return pd.DataFrame({"item": [], "itemLabel": [], "code": [], "ref": []})
     df["item"] = df["item"].str.split("/", expand=True)[4]
@@ -49,6 +64,16 @@ def get_people() -> pd.DataFrame:
     SERVICE wikibase:label { bd:serviceParam wikibase:language "sv". }
     }"""
 
-    df = wdi_core.WDItemEngine.execute_sparql_query(query, as_dataframe=True)
+    response = execute_sparql_query(query, user_agent=USER_AGENT)
+    items = [
+        {
+            "item": item["item"]["value"],
+            "itemLabel": item["itemLabel"]["value"],
+            "code": item["code"]["value"],
+        }
+        for item in response["results"]["bindings"]
+    ]
+    df = pd.DataFrame(items)
+
     df.item = df.item.str.split("/", expand=True)[4]
     return df

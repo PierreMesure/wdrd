@@ -8,7 +8,7 @@ docs = extract_docs("2024/25", "prop")
 
 print(type(docs), len(docs))
 
-docs = prepare_docs(docs[0:5])
+docs = prepare_docs(docs)
 
 print(type(docs), len(docs.docs))
 

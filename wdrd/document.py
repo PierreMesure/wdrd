@@ -101,7 +101,9 @@ class Document:
             if person["roll"] != "undertecknare" and self._doc["typ"] != "prop":
                 continue
             try:
-                authors.append({"name": person["namn"], "qid": id_mapping[person["intressent_id"]]})
+                authors.append(
+                    {"name": person["namn"], "qid": id_mapping[person["intressent_id"]]}
+                )
             except KeyError:
                 authors.append({"name": person["namn"], "qid": None})
 

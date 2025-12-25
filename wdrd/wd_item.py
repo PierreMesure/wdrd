@@ -1,6 +1,14 @@
 import simplejson
 from datetime import datetime
-from wikidataintegrator import wdi_core
+from wikibaseintegrator import WikibaseIntegrator
+from wikibaseintegrator.datatypes import (
+    ExternalID,
+    Time,
+    MonolingualText,
+    String,
+    Item,
+    URL,
+)
 import requests
 from . import config as cfg
 
@@ -8,9 +16,9 @@ from . import config as cfg
 def create_reference(doc):
     ref = []
     now = datetime.now().strftime("+%Y-%m-%dT00:00:00Z")
-    ref.append(wdi_core.WDExternalID(doc.doc_id, prop_nr="P8433", is_reference=True))
-    ref.append(wdi_core.WDTime(now, prop_nr="P813", is_reference=True))
-    ref.append(wdi_core.WDMonolingualText(doc.title, language="sv", prop_nr="P1476", is_reference=True))
+    ref.append(ExternalID(value=doc.doc_id, prop_nr="P8433"))
+    ref.append(Time(time=now, prop_nr="P813"))
+    ref.append(MonolingualText(text=doc.title, language="sv", prop_nr="P1476"))
     return ref
 
 
@@ -32,12 +40,18 @@ def create_authors(doc):
             snak_type = "value"
         sign_codes.append(person["qid"])
         if over_one:
-            sign_qual = wdi_core.WDString(str(i + 1), prop_nr="P1545", is_qualifier=True)
-            obj = wdi_core.WDItemID(
-                person["qid"], snak_type=snak_type, prop_nr=prop, references=[ref], qualifiers=[sign_qual]
+            sign_qual = String(str(i + 1), prop_nr="P1545")
+            obj = Item(
+                person["qid"],
+                snak_type=snak_type,
+                prop_nr=prop,
+                references=[ref],
+                qualifiers=[sign_qual],
             )
         else:
-            obj = wdi_core.WDItemID(person["qid"], snak_type=snak_type, prop_nr=prop, references=[ref])
+            obj = Item(
+                person["qid"], snak_type=snak_type, prop_nr=prop, references=[ref]
+            )
         signs.append(obj)
     return signs
 
@@ -52,14 +66,14 @@ def create_debate(doc):
     except simplejson.JSONDecodeError:
         return None
     video_url = "https://riksdagen.se" + data["videodata"][0]["debateurl"]
-    video_qual = wdi_core.WDUrl(video_url, prop_nr="P2699", is_qualifier=True)
-    return wdi_core.WDItemID("Q179875", prop_nr="P793", qualifiers=[video_qual])
+    video_qual = URL(video_url, prop_nr="P2699")
+    return Item("Q179875", prop_nr="P793", qualifiers=[video_qual])
 
 
 def create_respondent(doc):
     if doc.respondent:
         ref = create_reference(doc)
-        return wdi_core.WDItemID(doc.respondent["qid"], prop_nr="P1817", references=[ref])
+        return Item(doc.respondent["qid"], prop_nr="P1817", references=[ref])
 
 
 def create_descriptions(doc):
@@ -88,88 +102,96 @@ def create_descriptions(doc):
         label_author = doc.authors[0]["name"]
         label_respondent = doc.respondent["name"]
         label_date = doc.date[1:11]
-        descriptions["sv"] = f"interpellation i riksdagen från {label_author} till {label_respondent}, {label_date}"
-        descriptions["en"] = f"interpellation in the Riksdag from {label_author} to {label_respondent}, {label_date}"
+        descriptions["sv"] = (
+            f"interpellation i riksdagen från {label_author} till {label_respondent}, {label_date}"
+        )
+        descriptions["en"] = (
+            f"interpellation in the Riksdag from {label_author} to {label_respondent}, {label_date}"
+        )
     elif doc.doc_type == "fr":
         label_author = doc.authors[0]["name"]
         label_respondent = doc.respondent["name"]
-        descriptions["sv"] = f"skriftlig fråga från {label_author} till {label_respondent}"
-        descriptions["en"] = f"written question from {label_author} to {label_respondent}"
+        descriptions["sv"] = (
+            f"skriftlig fråga från {label_author} till {label_respondent}"
+        )
+        descriptions["en"] = (
+            f"written question from {label_author} to {label_respondent}"
+        )
 
     return descriptions
 
 
 def create_jurisdiction():
-    return wdi_core.WDItemID("Q34", prop_nr="P1001")
+    return Item(prop_nr="P1001", value="Q34")
 
 
 def create_title(doc):
     ref = create_reference(doc)
-    return wdi_core.WDMonolingualText(doc.title, language="sv", prop_nr="P1476", references=[ref])
+    return MonolingualText(doc.title, language="sv", prop_nr="P1476", references=[ref])
 
 
 def create_series(doc):
-    num_qual = wdi_core.WDString(str(doc.ordinal), prop_nr="P1545", is_qualifier=True)
-    series = wdi_core.WDItemID(doc.series, prop_nr="P179", qualifiers=[num_qual])
+    num_qual = String(value=str(doc.ordinal), prop_nr="P1545")
+    series = Item(doc.series, prop_nr="P179", qualifiers=[num_qual])
     return series
 
 
 def create_lang():
-    return wdi_core.WDItemID("Q9027", prop_nr="P407")
+    return Item("Q9027", prop_nr="P407")
 
 
 def create_date(doc):
     ref = create_reference(doc)
-    return wdi_core.WDTime(doc.date, prop_nr="P577", references=[ref])
+    return Time(doc.date, prop_nr="P577", references=[ref])
 
 
 def create_legal_ref(doc):
-    return wdi_core.WDString(f"{doc.doc_type}. {doc.session}:{doc.ordinal}", prop_nr="P1031")
+    return String(f"{doc.doc_type}. {doc.session}:{doc.ordinal}", prop_nr="P1031")
 
 
 def create_copyright():
-    det_qual = wdi_core.WDItemID("Q80211245", prop_nr="P459", is_qualifier=True)
-    copyright = wdi_core.WDItemID("Q19652", prop_nr="P6216", qualifiers=[det_qual])
+    det_qual = Item("Q80211245", prop_nr="P459")
+    copyright = Item("Q19652", prop_nr="P6216", qualifiers=[det_qual])
     return copyright
 
 
 def create_resource_links(doc):
     links = []
-    html_qual = wdi_core.WDItemID("Q62626012", prop_nr="P2701", is_qualifier=True)
-    links.append(wdi_core.WDUrl(doc.html, prop_nr="P953", qualifiers=[html_qual]))
+    html_qual = Item("Q62626012", prop_nr="P2701")
+    links.append(URL(doc.html, prop_nr="P953", qualifiers=[html_qual]))
 
-    xml_qual = wdi_core.WDItemID("Q3033641", prop_nr="P2701", is_qualifier=True)
-    links.append(wdi_core.WDUrl(doc.xml, prop_nr="P953", qualifiers=[xml_qual]))
+    xml_qual = Item("Q3033641", prop_nr="P2701")
+    links.append(URL(doc.xml, prop_nr="P953", qualifiers=[xml_qual]))
 
     if doc.pdf:
-        pdf_qual = wdi_core.WDItemID("Q42332", prop_nr="P2701", is_qualifier=True)
-        links.append(wdi_core.WDUrl(doc.pdf, prop_nr="P953", qualifiers=[pdf_qual]))
+        pdf_qual = Item("Q42332", prop_nr="P2701")
+        links.append(URL(doc.pdf, prop_nr="P953", qualifiers=[pdf_qual]))
 
     return links
 
 
 def create_riksdagen_id(doc):
-    return wdi_core.WDExternalID(doc.doc_id, "P8433")
+    return ExternalID(value=doc.doc_id, prop_nr="P8433")
 
 
 def create_committee(doc):
     if not doc.committee:
         return None
     ref = create_reference(doc)
-    return wdi_core.WDItemID(doc.committee, prop_nr="P7727", references=[ref])
+    return Item(doc.committee, prop_nr="P7727", references=[ref])
 
 
 def create_instance_of(doc):
     ref = create_reference(doc)
     if doc.doc_type == "mot":
-        return wdi_core.WDItemID(doc.subtype, prop_nr="P31", references=[ref])
+        return Item(doc.subtype, prop_nr="P31", references=[ref])
     else:
-        return wdi_core.WDItemID(cfg.doc_types[doc.doc_type], prop_nr="P31", references=[ref])
+        return Item(cfg.doc_types[doc.doc_type], prop_nr="P31", references=[ref])
 
 
 def create_cause(doc):
     if doc.cause:
-        return wdi_core.WDItemID(doc.cause, prop_nr="P1478")
+        return Item(doc.cause, prop_nr="P1478")
 
 
 def create_item(doc):
@@ -196,11 +218,12 @@ def create_item(doc):
 
     data = [x for x in data if x is not None]
 
-    item = wdi_core.WDItemEngine(data=data, new_item=True)
-    item.set_label(doc.title[:249], lang="sv")
+    wbi = WikibaseIntegrator()
+    item = wbi.item.new()
+    item.claims.add(claims=data)
+    item.labels.set(value=doc.title[:249], language="sv")
 
     descriptions = create_descriptions(doc)
-    item.set_description(descriptions["sv"], lang="sv")
-    item.set_description(descriptions["en"], lang="en")
-
+    item.descriptions.set(value=descriptions["sv"], language="sv")
+    item.descriptions.set(value=descriptions["en"], language="en")
     return item
