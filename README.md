@@ -20,9 +20,9 @@ There are four main functions:
 - Kommittédirektiv
 - Lag
 
-## Create a bot on Wikidata
+## Create a bot password on Wikidata
 
-- Create a Wikidata bot by going to [this page](https://www.wikidata.org/wiki/Special:BotPasswords). The bot's username should look like *MyUsername@MyBot*.
+- Create a Wikidata bot password by going to [this page](https://www.wikidata.org/wiki/Special:BotPasswords). This will enable the script to edit on your behalf. The name should look like *MyUsername@MyBotPasswordName*.
 
 - Create an *.env* file by copying the template and replace the two environment variables with your newly created Wikidata credentials
 
@@ -31,7 +31,7 @@ There are four main functions:
   ```
 
   ```env
-  WIKIDATA_USERNAME=MyUsername@MyBot
+  WIKIDATA_USERNAME=MyUsername@MyBotPasswordName
   WIKIDATA_PASSWORD=the-password-i-was-given
   ```
 
