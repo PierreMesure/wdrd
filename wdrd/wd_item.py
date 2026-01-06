@@ -171,6 +171,8 @@ def create_cause(doc):
     if doc.cause:
         return wdi_core.WDItemID(doc.cause, prop_nr="P1478")
 
+def create_maintained_by():
+    return wdi_core.WDItemID("Q114364300", prop_nr="P6104")
 
 def create_item(doc):
     data = []
@@ -179,6 +181,7 @@ def create_item(doc):
     data.append(create_title(doc))
     data.append(create_series(doc))
     data.append(create_lang())
+    data.append(create_maintained_by())
     data.append(create_date(doc))
     data.append(create_legal_ref(doc))
     data.append(create_copyright())
