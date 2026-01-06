@@ -10,15 +10,16 @@ There are four main functions:
 - `load_docs` loads the prepared and transformed documents to Wikidata.
 
 ## Supported document types
-- <s>Motion</s>
-- <s>Proposition</s>
-- <s>Interpellation</s>
-- <s>Skriftlig fråga</s>
-- Protokoll
-- Utskottsbetänkande
-- Utredningsbetänkande
-- Kommittédirektiv
-- Lag
+
+- [x] Motion
+- [x] Proposition
+- [x] Interpellation
+- [x] Skriftlig fråga
+- [ ] Protokoll
+- [ ] Utskottsbetänkande
+- [ ] Utredningsbetänkande
+- [ ] Kommittédirektiv
+- [ ] Lag
 
 ## Create a bot on Wikidata
 
