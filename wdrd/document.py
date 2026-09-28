@@ -3,6 +3,7 @@ from datetime import datetime
 from . import sparql as wd
 from . import config as cfg
 from .riksdagen import get_doc_metadata
+from .existing import ExistingDocuments, read_existing_documents, document_id
 
 
 class Document:
@@ -19,8 +20,9 @@ class Document:
 
     @property
     def date(self):
-        date_fmt = "+%Y-%m-%dT%H:%M:%SZ"
-        return datetime.strptime(self._doc["datum"], "%Y-%m-%d").strftime(date_fmt)
+        return datetime.fromisoformat(
+            self._doc["datum"].strip()
+        ).strftime("+%Y-%m-%dT00:00:00Z")
 
     @property
     def title(self):
@@ -130,12 +132,50 @@ class Document:
 
 
 class DocumentCollection:
-    def __init__(self, docs: list):
+    def __init__(self, docs: list, *, remove_existing=True, existing_documents=None):
+        self.input_count = len(docs)
+        self.invalid_count = 0
+        self.existing_count = 0
+        self.duplicate_count = 0
+        self.filtered_documents = []
+        self.warnings = []
+        existing = None
+        if existing_documents is not None:
+            existing = (existing_documents if isinstance(existing_documents, ExistingDocuments)
+                        else read_existing_documents(existing_documents))
+            self.warnings = list(existing.warnings)
+        if not docs:
+            self.session = self.doc_type = None
+            self.docs = []
+            return
         self.session = docs[0]["rm"]
         self.doc_type = docs[0]["doktyp"]
         docs = self._remove_invalid_docs(docs)
-        docs = self._remove_existing_docs(docs)
+        self.invalid_count = self.input_count - len(docs)
+        if existing is not None:
+            docs = self._remove_listed_docs(docs, existing)
+        elif remove_existing:
+            before = len(docs)
+            docs = self._remove_existing_docs(docs)
+            self.existing_count = before - len(docs)
         self.docs = [Document(x) for x in docs]
+
+    def _remove_listed_docs(self, docs, existing):
+        filtered = []
+        seen = set()
+        for doc in docs:
+            ident = document_id(doc["id"])
+            if ident in seen:
+                self.duplicate_count += 1
+                self.filtered_documents.append({"document_id": ident, "reason": "Repeated identifier in this run", "category": "duplicate"})
+                continue
+            seen.add(ident)
+            if ident in existing.mapping:
+                self.existing_count += 1
+                self.filtered_documents.append({"document_id": ident, "qid": existing.mapping[ident], "reason": "P8433 found in local list", "category": "existing"})
+                continue
+            filtered.append(doc)
+        return filtered
 
     def _remove_invalid_docs(self, docs):
         filtered_docs = []
@@ -143,8 +183,10 @@ class DocumentCollection:
             # if self.doc_type == "mot" and doc["subtyp"] == "":
             #    continue
             if self.doc_type == "prop" and doc["subtyp"] != "prop":
+                self.filtered_documents.append({"document_id": doc["id"], "reason": "Proposition has a different subtype"})
                 continue
             if doc["titel"] == "Motionen utgår":
+                self.filtered_documents.append({"document_id": doc["id"], "reason": "Motionen utgår"})
                 continue
             filtered_docs.append(doc)
         return filtered_docs
