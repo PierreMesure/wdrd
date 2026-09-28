@@ -1,0 +1,20 @@
+{
+  "format": "QuickStatements 3 / V1",
+  "processed": 3,
+  "exported": 2,
+  "filtered": 0,
+  "rejected": 1,
+  "filtered_documents": [],
+  "warnings": [],
+  "errors": [
+    {
+      "index": 3,
+      "document_id": "DEMO0003",
+      "reason": "Quotes, backslashes or Unicode line separators are outside the lossless text subset"
+    }
+  ],
+  "existing": 0,
+  "duplicates": 0,
+  "invalid": 0,
+  "input": 3
+}

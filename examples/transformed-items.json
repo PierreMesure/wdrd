@@ -1,0 +1,2402 @@
+[
+  {
+    "claims": {
+      "P1001": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1001",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 34,
+                "id": "Q34"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1031": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1031",
+            "datavalue": {
+              "value": "mot. 2024/25:1",
+              "type": "string"
+            },
+            "datatype": "string"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1476": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1476",
+            "datavalue": {
+              "value": {
+                "text": "Exempel: järnväg i Kalmar län",
+                "language": "sv"
+              },
+              "type": "monolingualtext"
+            },
+            "datatype": "monolingualtext"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1478": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1478",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 456,
+                "id": "Q456"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P179": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P179",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 123,
+                "id": "Q123"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": []
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 96739634,
+                "id": "Q96739634"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P407": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P407",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 9027,
+                "id": "Q9027"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P50": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 111,
+                "id": "Q111"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 222,
+                "id": "Q222"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "2",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P577": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P577",
+            "datavalue": {
+              "value": {
+                "time": "+2024-10-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            },
+            "datatype": "time"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P6216": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6216",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19652,
+                "id": "Q19652"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P459": [
+              {
+                "snaktype": "value",
+                "property": "P459",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 80211245,
+                    "id": "Q80211245"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P459"
+          ],
+          "references": []
+        }
+      ],
+      "P7727": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P7727",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 10701059,
+                "id": "Q10701059"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P8433": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P8433",
+            "datavalue": {
+              "value": "DEMO0001",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P953": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/document/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 62626012,
+                    "id": "Q62626012"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/status/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 3033641,
+                    "id": "Q3033641"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/1.pdf",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 42332,
+                    "id": "Q42332"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        }
+      ]
+    },
+    "labels": {
+      "sv": {
+        "language": "sv",
+        "value": "Exempel: järnväg i Kalmar län"
+      }
+    },
+    "descriptions": {
+      "sv": {
+        "language": "sv",
+        "value": "motion av Anna Åberg m.fl. från 2024"
+      },
+      "en": {
+        "language": "en",
+        "value": "motion by Anna Åberg et al. from 2024"
+      }
+    }
+  },
+  {
+    "claims": {
+      "P1001": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1001",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 34,
+                "id": "Q34"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1031": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1031",
+            "datavalue": {
+              "value": "mot. 2024/25:1",
+              "type": "string"
+            },
+            "datatype": "string"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1476": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1476",
+            "datavalue": {
+              "value": {
+                "text": "Exempel: järnväg i Kalmar län",
+                "language": "sv"
+              },
+              "type": "monolingualtext"
+            },
+            "datatype": "monolingualtext"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1478": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1478",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 456,
+                "id": "Q456"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P179": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P179",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 123,
+                "id": "Q123"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": []
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 96739634,
+                "id": "Q96739634"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P407": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P407",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 9027,
+                "id": "Q9027"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P50": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 111,
+                "id": "Q111"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "preferred",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            },
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0002",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 222,
+                "id": "Q222"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "2",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P577": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P577",
+            "datavalue": {
+              "value": {
+                "time": "+2024-10-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            },
+            "datatype": "time"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P6216": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6216",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19652,
+                "id": "Q19652"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P459": [
+              {
+                "snaktype": "value",
+                "property": "P459",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 80211245,
+                    "id": "Q80211245"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P459"
+          ],
+          "references": []
+        }
+      ],
+      "P7727": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P7727",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 10701059,
+                "id": "Q10701059"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P8433": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P8433",
+            "datavalue": {
+              "value": "DEMO0002",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P953": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/document/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 62626012,
+                    "id": "Q62626012"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/status/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 3033641,
+                    "id": "Q3033641"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/1.pdf",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 42332,
+                    "id": "Q42332"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        }
+      ]
+    },
+    "labels": {
+      "sv": {
+        "language": "sv",
+        "value": "Andra syntetiska exemplet"
+      }
+    },
+    "descriptions": {
+      "sv": {
+        "language": "sv",
+        "value": "motion av Anna Åberg m.fl. från 2024"
+      },
+      "en": {
+        "language": "en",
+        "value": "motion by Anna Åberg et al. from 2024"
+      }
+    },
+    "aliases": {
+      "sv": [
+        {
+          "language": "sv",
+          "value": "Åäö | alternativ titel"
+        }
+      ]
+    }
+  },
+  {
+    "claims": {
+      "P1001": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1001",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 34,
+                "id": "Q34"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1031": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1031",
+            "datavalue": {
+              "value": "mot. 2024/25:1",
+              "type": "string"
+            },
+            "datatype": "string"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P1476": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1476",
+            "datavalue": {
+              "value": {
+                "text": "Exempel: järnväg i Kalmar län",
+                "language": "sv"
+              },
+              "type": "monolingualtext"
+            },
+            "datatype": "monolingualtext"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1478": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1478",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 456,
+                "id": "Q456"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P179": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P179",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 123,
+                "id": "Q123"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": []
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 96739634,
+                "id": "Q96739634"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P407": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P407",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 9027,
+                "id": "Q9027"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P50": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 111,
+                "id": "Q111"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "1",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P50",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 222,
+                "id": "Q222"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P1545": [
+              {
+                "snaktype": "value",
+                "property": "P1545",
+                "datavalue": {
+                  "value": "2",
+                  "type": "string"
+                },
+                "datatype": "string"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1545"
+          ],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P577": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P577",
+            "datavalue": {
+              "value": {
+                "time": "+2024-10-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            },
+            "datatype": "time"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P6216": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6216",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19652,
+                "id": "Q19652"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P459": [
+              {
+                "snaktype": "value",
+                "property": "P459",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 80211245,
+                    "id": "Q80211245"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P459"
+          ],
+          "references": []
+        }
+      ],
+      "P7727": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P7727",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 10701059,
+                "id": "Q10701059"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": [
+            {
+              "snaks": {
+                "P8433": [
+                  {
+                    "snaktype": "value",
+                    "property": "P8433",
+                    "datavalue": {
+                      "value": "DEMO0001",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2026-09-22T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "datavalue": {
+                      "value": {
+                        "text": "Exempel: järnväg i Kalmar län",
+                        "language": "sv"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P8433",
+                "P813",
+                "P1476"
+              ]
+            }
+          ]
+        }
+      ],
+      "P8433": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P8433",
+            "datavalue": {
+              "value": "DEMO0003",
+              "type": "string"
+            },
+            "datatype": "external-id"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {},
+          "qualifiers-order": [],
+          "references": []
+        }
+      ],
+      "P953": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/document/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 62626012,
+                    "id": "Q62626012"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/status/1",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 3033641,
+                    "id": "Q3033641"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P953",
+            "datavalue": {
+              "value": "https://example.org/1.pdf",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "rank": "normal",
+          "qualifiers": {
+            "P2701": [
+              {
+                "snaktype": "value",
+                "property": "P2701",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 42332,
+                    "id": "Q42332"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P2701"
+          ],
+          "references": []
+        }
+      ]
+    },
+    "labels": {
+      "sv": {
+        "language": "sv",
+        "value": "Titel med “citattecken”"
+      }
+    },
+    "descriptions": {
+      "sv": {
+        "language": "sv",
+        "value": "motion av Anna Åberg m.fl. från 2024"
+      },
+      "en": {
+        "language": "en",
+        "value": "motion by Anna Åberg et al. from 2024"
+      }
+    }
+  }
+]

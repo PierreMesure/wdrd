@@ -3,12 +3,10 @@ import time
 from wikidataintegrator import wdi_core, wdi_login
 
 
-WD_USERNAME = os.environ.get("WD_USERNAME")
-WD_PASSWORD = os.environ.get("WD_PASSWORD")
-login_instance = wdi_login.WDLogin(user=WD_USERNAME, pwd=WD_PASSWORD)
-
-
 def load_collection(docs) -> None:
+    login_instance = wdi_login.WDLogin(
+        user=os.environ.get("WD_USERNAME"), pwd=os.environ.get("WD_PASSWORD")
+    )
     summary = f"Adding Riksdagen documents with wdrd."
 
     for doc in docs:

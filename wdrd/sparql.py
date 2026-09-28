@@ -17,7 +17,9 @@ def get_series_qid(session: str, doc_type: str) -> str:
         'SERVICE wikibase:label { bd:serviceParam wikibase:language "sv". }}'
     )
 
-    df = wdi_core.WDItemEngine.execute_sparql_query(query, as_dataframe=True)
+    df = wdi_core.WDItemEngine.execute_sparql_query(
+        query, as_dataframe=True
+    )
     return df.loc[0, "item"].split("/")[-1]
 
 
